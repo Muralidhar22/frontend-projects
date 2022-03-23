@@ -1,0 +1,318 @@
+*,
+*::before,
+*::after {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+:root{
+--Blue: hsl(246, 80%, 60%);
+
+--light-red-work: hsl(15, 100%, 70%);
+--Soft-blue--play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-selfcare: hsl(43, 84%, 65%);
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif; 
+}
+body{
+    background-color: var(--Very-dark-blue); 
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     min-height: 100vh; 
+}
+
+.time-tracker-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    'six'
+    'seven';
+    grid-template-columns: auto;
+}
+ .time-tracker-grid:nth-child(1) {
+    grid-area: one;
+  }
+  .time-tracker-grid:nth-child(2) {
+    grid-area: two;
+  }
+  .time-tracker-grid:nth-child(3) {
+    grid-area: three;
+  }
+  .time-tracker-grid:nth-child(4) {
+    grid-area: four;
+  }
+  .time-tracker-grid:nth-child(5) {
+    grid-area: five;
+  }
+  .time-tracker-grid:nth-child(6) {
+    grid-area: six;
+  }
+  .time-tracker-grid:nth-child(7) {
+    grid-area: seven;
+  }
+
+
+/* report styling */
+
+.report-person{
+    background-color: var(--Blue);
+}
+.report-timeline{
+    background-color: var(--Dark-blue);
+}
+
+
+/* All grids */
+.total-card-style{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+/*report */
+.report-timeline button{
+    /* display: flex;
+    justify-content: space-between; */
+    background: none;
+    border: none;
+    margin: .5em;
+    font: inherit;
+    outline: none;
+    font-size: 1.8rem;
+}
+.report-person p{
+    color: var(--Pale-Blue);
+}
+
+.style-cards{
+    background-color: var(--Dark-blue);
+    padding: 2em;
+    border-radius: 1em;
+    margin-top: -1.5rem;
+    position: relative;
+    z-index: 2;
+}
+.style-icon-cards{
+    height: 4rem;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    background-position: calc(100% - 20px) top;
+    background-repeat: no-repeat;
+}
+
+/* icons */
+
+.work-icon{
+    background-image: url(images/icon-work.svg);
+    background-color: var(--light-red-work);
+}
+.play-icon{
+    background-image: url(images/icon-play.svg);
+    background-color: var(--Soft-blue--play);
+}
+.study-icon{
+    background-image: url(images/icon-study.svg);
+    background-color: var(--Light-red-study);
+}
+.exercise-icon{
+    background-image: url(images/icon-exercise.svg);
+    background-color: var(--Lime-green-exercise);
+}
+.social-icon{
+    background-image: url(images/icon-social.svg);
+    background-color: var(--Violet-social);
+}
+.self-care-icon{
+    background-image: url(images/icon-self-care.svg);
+    background-color: var(--Soft-orange-selfcare);
+}
+.previous{
+    color: var(--Pale-Blue);
+}
+
+
+/*mobile-view */
+
+@media screen and (max-width: 1000px) {
+    h1{
+        font-weight: 100;
+    }
+    .report-person{
+        display: flex;
+        border-radius: 1em;
+        gap: 1em;
+        padding: 2em;
+        place-items: center;
+        position: relative;
+        z-index: 2;
+        margin-bottom: -1em;
+    }
+    .report-person img{
+      display: block;
+      border: 3px solid white;
+      width: 75px;
+      border-radius: 100%;
+  }
+  .report-timeline{
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+    padding: 1.5em;
+  }
+ 
+  /*card title and three dots */
+  .card-titles{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    }
+    .card-titles::after{
+    content: url('images/icon-ellipsis.svg');
+    }
+     /* display: flex of Hours and previous track */
+    .time-mobile-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .hrs{
+        font-size: 3rem;
+        font-weight: 100;
+    }
+}
+
+/* Desktop -view CSS Start */
+
+@media screen and (min-width: 1000px){
+    .time-tracker-grid{
+        grid-template-areas: 
+        "one two three four"
+        "one five six seven";
+    }
+ 
+    h1{
+        font-size: 3.8rem;
+        font-weight: 100;
+    }
+
+    /* report */
+    .report{
+        grid-row: 1 / span 2; 
+        color: white;
+        white-space: nowrap;
+    }
+    .report-person{
+        border-radius: 1.5em; 
+        padding: 2em 8em 2em 2em;
+        position: relative;
+        z-index: 2;
+        margin-bottom: -1.7rem;
+    }
+    .report-person img{
+        display: block;
+        border: 3px solid white;
+        width: 100px;
+        border-radius: 100%;
+    }
+    .report-person p{
+        margin-top: 3em;
+        font-size: 1.3rem;
+        
+    }
+    .report-person h1{
+        margin-bottom: 4rem;
+    }
+    .report-person h1 span{
+        display: block;
+    }
+      /* buttons */
+    .report-timeline button{
+        display: grid;
+    }
+
+    button{
+        cursor: pointer;
+    }
+    .report-timeline{
+        padding: 2em;
+        line-height: 2.5em; 
+        border-bottom-right-radius: 1.5em; 
+        border-bottom-left-radius: 1.5em;
+    }
+
+    /*icons*/
+    .style-icon-cards
+    {
+        height: 15rem;
+        border-top-left-radius: 1.5em;
+        border-top-right-radius: 1.5em;
+        background-position: calc(100% - 20px) top;
+        background-repeat: no-repeat;
+    }
+
+
+    /* card content styling */
+    .card-titles{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 6em;
+        place-items: center;
+    }
+    .card-titles::after{
+        content: url('images/icon-ellipsis.svg');
+        cursor:pointer;
+        place-items: center;
+    }
+    .style-cards{
+        padding: 2em;
+        border-radius: 1.5em;
+        color: white;
+        margin-top: -10rem;
+        position: relative;
+        z-index: 2;
+    }
+    .hrs{
+        font-size: 5.8rem;
+        font-weight: 50;
+        margin: .5em .1em 0;
+    }
+   .previous{
+       font-size: 1.5rem;
+   }
+}
+/* Desktop view CSS End */
+
+/* text-muted class */
+.text-muted{
+    color: var(--Desaturated-blue);
+}
+
+ /* footer */
+.attribution{
+    text-align: center;
+    font-size: 1.6rem;
+    height: 2rem;
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

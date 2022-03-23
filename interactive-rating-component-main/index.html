@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <main>
+    <div class="rating-component">
+      <section class="section1" aria-labelledby="submit-your-rating">
+        <img src="images/icon-star.svg" alt="star">
+        <div id="submit-your-rating">
+          <h1>How did we do?</h1>
+        </div>
+        <p class="para-section1">
+          Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
+        </p>
+
+        <button class="btn-rating" data-value="1">1</button>
+        <button class="btn-rating" data-value="2">2</button>
+        <button class="btn-rating" data-value="3">3</button>
+        <button class="btn-rating" data-value="4">4</button>
+        <button class="btn-rating" data-value="5">5</button>
+        
+        <button class="btn-submit dsply-blck">
+          Submit
+        </button>
+      </section>
+
+      <section class="section2 dsply-none" aria-labelledby="your-rating">
+        <img src="images/illustration-thank-you.svg" alt="your rating has been submitted">
+        <h1>Thank you!</h1>
+        <div id="your-rating">
+         <p>You selected<span class="your-rating"></span> out of 5</p> 
+        </div>
+          <p class="para-section2">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+          </p> 
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+     <p>Coded by <a href="#">Muralidhar</a>.</p> 
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+
+  <title>Frontend Mentor | chat-app-illustration</title>
+  
+
+</head>
+<body>
+  <main class="grid-class">
+    <div class="phone-wrapper">
+      <div class="phone-container">
+        <div class="phone-container__contact">
+          <div class="notch"><!--notch--></div>
+          <div class="contact flex-class">
+            <i class="contact__previous-arrow" title="arrow icon"></i>
+            <img class="contact__avatar" src="images/avatar.jpg" alt="">
+            <p class="contact__name">Samuel Green<span class="contact__status">Available to Walk</span></p>
+          </div>
+        </div>
+            <div class="phone-container__chat grid-class">
+              <p class="phone-container__chat__msg msg-text msg-received">
+                That sounds great. I’d be happy with that.
+              </p>
+                <p class="phone-container__chat__msg msg-text msg-received">
+                  Could you send over some pictures of your dog, please?
+                </p>
+                  <div class="phone-container__chat__msg msg-img msg-sent flex-class">
+                    <img src="images/dog-image-1.jpg" class="msg-img--mod" alt="">
+                    <img src="images/dog-image-2.jpg" class="msg-img--mod" alt="">
+                    <img src="images/dog-image-3.jpg" class="msg-img--mod" alt="">
+                 </div>
+                    <p class="phone-container__chat__msg msg-text msg-sent">
+                      Here are a few pictures. She’s a happy girl!
+                    </p>
+                    <p class="phone-container__chat__msg msg-text msg-sent">
+                      Can you make it?
+                    </p>
+                    <p class="phone-container__chat__msg msg-text msg-received"> 
+                      She looks so happy! The time we discussed works. How long shall I take her out for?
+                    </p>
+                  <div class="phone-container__chat__msg msg-received msg-context-price flex-class">
+                    <label for="price-selection"><input type="radio" class="msg-price-selection" name="price-selection" id="price-selection1">
+                      <span class="custom-radio-button"></span></label>
+                      <p class="walk-duration">30 minute walk</p>
+                      <span class="price-per-duration">$29</span>
+                  </div>
+                <div class="phone-container__chat__msg msg-received msg-context-price flex-class">
+                  <label for="price-selection"><input type="radio" class="msg-price-selection" name="price-selection" id="price-selection2">
+                  <span class="custom-radio-button"></span></label>
+                  <p class="walk-duration">1 hour walk</p>
+                  <span class="price-per-duration">$49</span>
+                </div>
+                <div class="send-msg flex-class">
+                  <label for="type-a-msg"><input type="text" name="type-a-msg" id="type-a-msg" placeholder="Type a message…"></label>
+                <button class="send-msg__btn"><i class="msg-submit-arrow" title="arrow icon"></i></button>
+                </div>
+                
+            </div>
+          </div>
+    </div>
+
+        <div class="main__content">
+          <header>
+            <h1>Simple booking</h1>
+          </header>
+        <p class="main__content__para">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.
+        </p>
+        </div>
+  
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Muralidhar</a>.&nbsp;|&nbsp;<a href="">Repo Link</a>
+    </div>
+  </footer>
+
+</body>
+</html>

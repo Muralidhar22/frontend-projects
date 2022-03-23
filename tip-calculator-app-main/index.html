@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  
+</head>
+<body>
+  <main class="flex-class">
+    <header>
+      <img src="images/logo.svg" alt="logo">
+    </header>
+    <div class="container flex-class">
+        <div class="input-container flex-class space-between">
+                <div>
+                    <label class="side-heading margin-bottom flex-class space-between" for="bill">Bill<span class="bill-span">Can't be Zero</span></label>
+                    <input name="bill" class="input-box-formatting bill" type="text" placeholder="0">
+                </div>
+                      <div class="tip-percent">
+                          <p class="side-heading margin-bottom">Select Tip %</p>
+                              <div class="tip-grid-container">
+                                  <button class="button-percent-formatter button-inactive" value="5">5%</button>
+                                  <button class="button-percent-formatter button-inactive" value="10">10%</button>
+                                  <button class="button-percent-formatter button-inactive" value="15">15%</button>
+                                  <button class="button-percent-formatter button-inactive" value="25">25%</button>
+                                  <button class="button-percent-formatter button-inactive" value="50">50%</button>
+                                  <input class="custom-percent" type="text" placeholder="Custom">
+                              </div>
+                      </div>
+                <div class="noOfPeople">
+                    <label class="side-heading margin-bottom flex-class space-between" for="noOfPeople">Number of People<span class="people-span">Can't be Zero</span></label>
+                    <input name="noOfPeople" class="input-box-formatting people" type="text" placeholder="0">
+                </div>
+        </div>
+        <div class="output-container flex-class">
+            <div class="tip-amount flex-class space-between">
+                <p>
+                  Tip Amount
+                  <span>/ person</span>
+                </p>
+                <p class="tip-amount-number number-styling">$0.00</p>
+            </div>
+                  <div class="total flex-class space-between">
+                    <p>
+                      Total
+                      <span>/ person</span>
+                    </p>
+                    <p class="total-number number-styling">$0.00</p>
+                  </div>
+                        <div class="reset-btn-div">
+                            <button class="reset-button reset-btn-mute">RESET</button>
+                        </div>
+        </div>
+    </div>
+  </main>
+
+  <footer>
+      <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Muralidhar</a>.
+      </div>
+  </footer>
+
+  <script src="tip-calculator-app.js"></script>
+</body>
+</html>

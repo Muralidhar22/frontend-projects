@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8"> <!--META-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  <!--LINKS-->
+  <link rel="stylesheet" href="app.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>   <!-- TITLE -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">   <!-- GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main>
+    <div class="time-tracker-grid">
+
+      <section class="report total-card-style">
+        <div class="report-person">
+          <img src="images/image-jeremy.png" alt="user" >
+            <div class="report-mobile-view">
+                <p>Report for</p>
+                <h1>
+                  <span>Jeremy</span> 
+                  <span>Robson</span>
+                </h1>
+            </div>
+        </div>
+              <div class="report-timeline">
+                  <button id="daily-btn" class="text-muted">Daily</button>
+                  <button id="weekly-btn" class="text-muted">Weekly</button>
+                  <button id="monthly-btn" class="text-muted">Monthly</button>
+              </div>
+      </section>
+
+      <section class="work total-card-style">
+        <div class="work-icon style-icon-cards"></div>
+            <div class="work-content style-cards">
+              <p class="card-titles">Work</p>
+              <div class="time-mobile-view">
+                  <div>
+                    <p class="hrs">0hrs</p>
+                  </div>
+                        <div>
+                          <p class="previous">Select Time Tracking</p>
+                        </div>
+              </div>
+        </div>
+      </section>
+
+      <section class="play total-card-style">
+        <div class="play-icon style-icon-cards"></div>
+          <div class="play-content style-cards">
+              <p class="card-titles">Play</p>
+              <div class="time-mobile-view">
+                <div>
+                  <p class="hrs">0hrs</p>
+                </div>
+                      <div>
+                        <p class="previous">Select Time Tracking</p>
+                      </div>
+                </div>
+          </div>
+      </section>
+
+      <section class="study total-card-style">
+        <div class="study-icon style-icon-cards"></div>
+            <div class="study-content style-cards">
+            <p class="card-titles">Study</p>
+            <div class="time-mobile-view">
+              <div>
+                <p class="hrs">0hrs</p>
+              </div>
+                    <div>
+                      <p class="previous">Select Time Tracking</p>
+                    </div>
+              </div>
+          </div>
+      </section>
+
+        <section class="exercise total-card-style">
+          <div class="exercise-icon style-icon-cards"></div>
+            <div class="exercise-content style-cards">
+            <p class="card-titles">Exercise</p>
+            <div class="time-mobile-view">
+              <div>
+                <p class="hrs">0hrs</p>
+              </div>
+                    <div>
+                      <p class="previous">Select Time Tracking</p>
+                    </div>
+              </div>
+          </div>
+        </section>
+
+        <section class="social total-card-style">
+          <div class="social-icon style-icon-cards"></div>
+            <div class="social-content style-cards">
+            <p class="card-titles">Social</p>
+            <div class="time-mobile-view">
+              <div>
+                <p class="hrs">0hrs</p>
+              </div>
+                    <div>
+                      <p class="previous">Select Time Tracking</p>
+                    </div>
+              </div>
+          </div>
+        </section>
+
+        <section class="self-care total-card-style">
+          <div class="self-care-icon style-icon-cards"></div>
+              <div class="self-care-content style-cards">
+                <p class="card-titles">Self Care</p>
+                <div class="time-mobile-view">
+                  <div>
+                    <p class="hrs">0hrs</p>
+                  </div>
+                        <div>
+                          <p class="previous">Select Time Tracking</p>
+                        </div>
+                  </div>
+          </div>
+        </section>
+    </div>   
+  </main>
+
+
+<div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Muralidhar</a>.
+</div>
+  <script src="time-tracking.js" defer></script>
+  <script src="data.json" ></script>
+
+</body>
+</html>
